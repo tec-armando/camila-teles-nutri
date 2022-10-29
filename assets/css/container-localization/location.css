@@ -1,0 +1,39 @@
+.location {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.location iframe {
+  margin: 1rem 0;
+  /* border-radius: 5rem; */
+  box-shadow: 0 0 1rem var(--grey);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.button input {
+  padding: 2rem;
+  font-size: 1.6rem;
+  color: white;
+  background-color: var(--dark-pink);
+  border: none;
+  border-radius: 3rem;
+  text-transform: uppercase;
+  transition: 0.7s;
+  margin: 0 0 3rem 0;
+}
+
+.button input:hover {
+  background-color: var(--red);
+  transform: scale(1.1);
+  box-shadow: 0 .5rem 1rem var(--grey);
+  transition: 0.7s;
+}

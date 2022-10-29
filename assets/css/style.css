@@ -1,0 +1,165 @@
+:root {
+  --montserrat: 'Montserrat', sans-serif;
+  --oregano: 'Oregano', cursive;
+  --light-pink: #FFE7E9;
+  --medium-pink: #F6ABC2;
+  --dark-pink: #C94D70;
+  --green: #35D412;
+  --light-green: #A0C565;
+  --red: #8C0303;
+  --grey: #464646;
+  --black: #313131;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+  font-family: var(--montserrat);
+  text-align: justify;
+}
+
+body {
+  width: 100%;
+  margin-top: 10rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--senary-color);
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+}
+
+/* ---------------------HEADER-----------------------  */
+
+
+
+/* --------------------------Main---------------------*/
+
+
+/* .main-content {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.container-main {
+  display: flex;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.container-main-img {
+  width: 80%;
+  margin: 0 auto;
+} */
+
+
+
+/* .apresentation-woman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  margin: 3rem 0;
+  border-radius: 5rem 5rem 0 5rem;
+}
+
+.content-woman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+}
+
+.content-woman div {
+  padding: 2rem 0;
+}
+
+.content-woman img {
+  float: left;
+  width: 40%;
+  margin: 0 2rem 2rem 0;
+  border-radius: 2rem;
+  box-shadow: 1rem 1rem 2rem var(--septenary-color);
+}
+
+.content-woman div p {
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
+} */
+
+
+
+
+
+/* ----------------AVALIACOES--------------- */
+
+  /* @media (max-width: 992px) {
+    width: 25rem;
+  }
+
+  @media (max-width: 480px) {
+    opacity: 0;
+  }
+
+
+.carrossel-item.carrossel-item-previous {
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+.carrossel-item.carrossel-item-next {
+  left: 70%;
+  transform: translateX(-50%);
+}
+
+.carrossel-item.carrossel-item-first {
+  left: 15%;
+  transform: translateX(-50%);
+}
+
+.carrossel-item.carrossel-item-last {
+  left: 85%;
+  transform: translateX(-50%);
+}
+
+.carrossel-controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+  position: relative;
+  bottom: 25rem;
+
+  @media (max-width: 992px) {
+    display: none;
+  }
+} */
+
+
+
+/* --------------------------------------------- */
+
