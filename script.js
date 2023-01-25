@@ -2,14 +2,24 @@ const carrosselContainer = document.querySelector(".carrossel-container")
 const carrosselItems = document.querySelectorAll(".carrossel-item")
 const carrosselControlsContainer = document.querySelector(".carrossel-controls")
 
-let largura =
-  window.innerWidth ||
-  document.documentElement.clientWidth ||
-  document.body.clientWidth
+
+function clientWidth() {
+  let largura =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth
+    console.log(largura)
+    return largura
+}
+
+
+
+window.addEventListener("load", screenWidth)
 function screenWidth() {
+  let largura = clientWidth()
   let carrossel = document.querySelector(".container-depositions")
   
-  if (largura >= 768) {
+  if (largura > 768) {
     carrossel.style.display = "block"
     carrosel.setControls()
     carrosel.setNav()
