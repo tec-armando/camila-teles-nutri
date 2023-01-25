@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Oregano:ital@1&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/container-header/header.css" />
     <link rel="stylesheet" href="./assets/css/container-home/home.css" />
     <link rel="stylesheet" href="./assets/css/container-about/about.css" />
@@ -27,32 +27,30 @@
       rel="stylesheet"
       href="./assets/css/container-localization/location.css"
     />
+    <link rel="stylesheet" href="./assets/css/container-clinic/clinic.css" />
     <link rel="stylesheet" href="./assets/css/container-footer/footer.css" />
     <title>Camila Teles</title>
   </head>
-  <body onscroll="positionX()" onload="screenWidth()">
+  <body>
     <header class="header">
       <div class="header__container">
-        <img
-          src="./assets/img/logo.png"
-          alt="Logo Camila Teles"
-          for="home"
-          class="header__container-image"
-        />
+        <div class="header__image">
+          <img src="./assets/img/logo.png" alt="Logo Camila Teles" for="home" />
+        </div>
 
         <nav class="header__container-menu">
           <ul class="menu-content">
             <li><a href="#home">Home</a></li>
             <li><a href="#home">Saúde da mulher</a></li>
             <li><a href="./service.html">Serviços</a></li>
-            <li><a href="#contact">Contato</a></li>
+            <li><a href="#footer">Contato</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="home container" id="home">
+      <section class="home" id="home">
         <div class="home__back">
           <img
             src="./assets/img/capa-2.png"
@@ -62,36 +60,36 @@
         </div>
 
         <div class="home__text">
-          <h2 class="home__text-title">Olá, seja bem vinda</h2>
-          <h2 class="home__text-title">a sua transformação!</h2>
+          <h2 data-js="typing" class="home__text-title"> </h2>
+          
         </div>
       </section>
-      <section class="apresentation">
-        <h1 class="apresentation__title">Quem sou eu</h1>
-        <div class="apresentation__container">
+      <section class="about">
+        <h1>Quem sou eu</h1>
+        <div class="about__container">
           <img
             src="./assets/img/camila-branca.png"
             alt="Foto Camila Teles"
-            class="apresentation__container-image"
+            class="about__image"
           />
-          <p class="apresentation__container-text">
+          <p class="about__text">
             Prazer, meu nome é Camila Teles, sou nutricionista especializada em
             esporte, gastronomia, emagrecimento e saúde da mulher. Me formei no
             ano de 2010 e desde então trabalho com atendimentos nutricionais.
           </p>
-          <p class="apresentation__container-text">
+          <p class="about__text">
             Minha missão é ajudar mulheres a se relacionarem melhor com a
             comida, resgatarem a autoestima e viverem em sua melhor versão! Vou
             te mostrar que você pode comer tudo que gosta sem culpa, sem
             terrorismo e que o processo de transformação pode ser leve e
             prazeroso.
           </p>
-          <p class="apresentation__container-text">
+          <p class="about__text">
             Minha grande paixão e minha maior realização é ver o sorriso de cada
             mulher ao se desafiar, alcançar seus objetivos e descobrir sua
             capacidade, sua força e o quanto é especial!
           </p>
-          <p class="apresentation__container-text">
+          <p class="about__text">
             A alimentação vai muito além do ato de comer, ela envolve afeto,
             emoções, sentimentos, socialização, autocuidado, autoconhecimento,
             amor próprio, fisiologia, reações químicas e vou te ajudar a
@@ -100,23 +98,23 @@
           </p>
         </div>
       </section>
-      <section class="container__woman">
-        <div class="woman__content">
-          <h2 class="woman__content-title">Saúde da Mulher</h2>
+      <section class="woman">
+        <div class="woman__container">
+          <h2 class="woman__title">Saúde da Mulher</h2>
           <div>
             <img
               src="./assets/img/saude-da-mulher.jpg"
               alt=""
-              class="woman__content-image"
+              class="woman__image"
             />
-            <p class="woman__content-text">
+            <p class="woman__text">
               Estamos vivendo a era da mulher multitarefas. A mulher que tem
               jornada dupla e até tripla. Precisamos cuidar da casa, trabalhar
               fora, dar atenção aos filhos, ao marido, aos familiares, encontrar
               tempo para estar com as amigas, estudar, dentre outras tarefas; e
               nós mesmas vamos ficando de lado.
             </p>
-            <p class="woman__content-text">
+            <p class="woman__text">
               Infelizmente algumas doenças e distúrbios têm aumentando também
               entre nós. Devido ao aumento dos compromissos e das preocupações,
               aparecem à ansiedade, o estresse, a auto sabotagem, o aumento de
@@ -128,22 +126,24 @@
               para sermos perfeitas em todas as áreas, contribuem para o
               agravamento desses distúrbios e a auto cobrança.
             </p>
-            <p class="woman__content-text">
+            <p class="woman__text">
               Por isso eu levanto a bandeira da mulher forte, corajosa,
               dedicada, empoderada, que se cuida, que se ama, que se prioriza,
               que se conhece e que também quer ser acolhida e cuidada.
             </p>
-            <p class="woman__content-text">
-               Eu
-              acredito que é possível você viver sem desconfortos como dores,
+            <p class="woman__text">
+              Eu acredito que é possível você viver sem desconfortos como dores,
               mudanças de humor, cólicas, ansiedade, vontade de comer em excesso
               e também realizar todos os seus sonhos inclusive, para muitas, o
               de ser mãe; e tudo isso mantendo a sua rotina. Afinal de contas
               nós precisamos estar bem e saudáveis para cuidar dos nossos.
             </p>
-            <p class="woman__content-text">
-              Eu luto por uma nutrição equilibrada, prática, saborosa, efetiva, que gere resultados sem grandes sacrifícios e dessa forma, você pode desempenhar suas tarefas com excelência aprendendo a se amar, se conhecer e se enxergar como uma mulher única, poderosa, virtuosa, preciosa, corajosa e viver a sua melhor versão.
-
+            <p class="woman__text">
+              Eu luto por uma nutrição equilibrada, prática, saborosa, efetiva,
+              que gere resultados sem grandes sacrifícios e dessa forma, você
+              pode desempenhar suas tarefas com excelência aprendendo a se amar,
+              se conhecer e se enxergar como uma mulher única, poderosa,
+              virtuosa, preciosa, corajosa e viver a sua melhor versão.
             </p>
           </div>
         </div>
@@ -151,7 +151,7 @@
           <input type="button" value="Quero agendar minha transformação" />
         </div>
       </section>
-      <section class="container-depositions" style="display: none">
+      <section class="container-depositions" style="display: none;">
         <div class="carrossel p-3 mt-5 teste">
           <div class="carrossel-container pt-5">
             <div class="carrossel-item">
@@ -253,26 +253,34 @@
         </div>
       </section>
       <section class="location">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.7952206618897!2d-43.90872908516487!3d-19.89086708662563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699a1f37f22b1%3A0x5076b0ab6d5ce6f!2sCamila%20Teles%20-%20Nutricionista%20de%20sa%C3%BAde%20da%20mulher%20e%20emagrecimento%20regi%C3%A3o%20leste%20de%20Belo%20Horizonte!5e0!3m2!1spt-BR!2sbr!4v1661435690188!5m2!1spt-BR!2sbr"
-          width="100%"
-          height="450"
+        <div class="location__map">
+          <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.7952206618897!2d-43.90872908516487!3d-19.89086708662563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699a1f37f22b1%3A0x5076b0ab6d5ce6f!2sCamila%20Teles%20-%20Nutricionista%20de%20sa%C3%BAde%20da%20mulher%20e%20emagrecimento%20regi%C3%A3o%20leste%20de%20Belo%20Horizonte!5e0!3m2!1spt-BR!2sbr!4v1661435690188!5m2!1spt-BR!2sbr"          
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
+        </div>
+        
         <div class="button">
           <input type="button" value="Quero agendar minha transformação" />
         </div>
       </section>
-      <section class="img-office"></section>
+      <section class="clinic">
+        <h2 class="clinic__title">Venha conhecer!</h2>
+        <div class="clinic__images">
+          <div class="clinic__img reset--img"></div>
+          <div class="clinic__img reset--img"></div>
+          <div class="clinic__img reset--img"></div>
+        </div>
+      </section>
     </main>
-    <footer class="container-footer">
-      <div class="footer">
-        <div class="footer__social">
-          <p>Redes sociais</p>
-          <div class="footer__social-container">
+    <footer class="footer" id="footer">
+      <div class="footer__container">
+        <div class="footer__social box">
+          <h3 class="footer__title">Redes sociais</h3>
+          <div class="footer__social-itens">
             <a href="http://">
               <img src="assets/img/social/instagram2.png" alt="facebook" />
             </a>
@@ -287,11 +295,11 @@
             </a>
           </div>
         </div>
-        <div class="footer__image">
-          <img src="./assets/img/logo_branca.png" alt="" />
+        <div class="footer__image box">
+          <img src="./assets/img/logo.png" alt="" />
         </div>
-        <div class="footer__contact">
-          <p>Contato</p>
+        <div class="footer__contact box">
+          <h3 class="footer__title">Contato</h3>
           <address class="footer__contact-address">
             <p>
               <img
@@ -299,7 +307,7 @@
                 alt=""
                 srcset=""
               />
-              Rua Olímpia, nº 18 Belo Horizonte - MG
+              Rua Olímpia, nº 18, sala 505, Belo Horizonte - MG
             </p>
             <p>
               <a href="tel:+5531982508787">
@@ -316,7 +324,8 @@
         </div>
       </div>
     </footer>
-    <script src="./script.js"></script>
-    <script src="./assets/script/add-class.js"></script>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="./assets/script/add-class.js"></script>
+    <script type="module" src="./assets/script/message.js"></script>
   </body>
 </html>

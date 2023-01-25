@@ -11,9 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Oregano:ital@1&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/container-header/header.css" />
-    <link rel="stylesheet" href="./assets/css/container-about/about.css" />
+    <link rel="stylesheet" href="./assets/css/container-services/services.css" />
     <link
       rel="stylesheet"
       href="./assets/css/container-localization/location.css"
@@ -24,39 +24,22 @@
   <body onscroll="positionX()" onload="screenWidth()">
     <header class="header">
       <div class="header__container">
-        <img
-          src="./assets/img/logo.png"
-          alt="Logo Camila Teles"
-          for="home"
-          class="header__container-image"
-        />
+        <div class="header__image">
+          <img src="./assets/img/logo.png" alt="Logo Camila Teles" for="home" />
+        </div>
 
         <nav class="header__container-menu">
           <ul class="menu-content">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./index.html">Saúde da mulher</a></li>
-            <li><a href="#services">Serviços</a></li>
-            <li><a href="#contact">Contato</a></li>
+            <li><a href="./service.html">Serviços</a></li>
+            <li><a href="#footer">Contato</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <!-- <section class="home container" id="home">
-        <div class="home__back">
-          <img
-            src="./assets/img/capa-2.png"
-            alt="Suco"
-            class="home__back-image"
-          />
-        </div>
-
-        <div class="home__text">
-          <h2 class="home__text-title">Olá, seja bem vinda</h2>
-          <h2 class="home__text-title">a sua transformação!</h2>
-        </div>
-      </section> -->
       <section class="apresentation">
         <h1 class="apresentation__title">Minha consulta</h1>
         <div class="apresentation__container">
@@ -75,17 +58,17 @@
           <p class="apresentation__container-text">
             Para te ajudar eu desenvolvi o método NMV (Nutra sua Melhor Versão). Nele vamos trabalhar 4 pilares:
           </p>
-          <p class="apresentation__container-text">
-            1. Alimentação saudável e equilibrada
+          <p class="apresentation__container-text"><strong>1. Alimentação saudável e equilibrada</strong>
+            
           </p>
-          <p class="apresentation__container-text">
-            2. Comportamento
+          <p class="apresentation__container-text"><strong>2. Comportamento</strong>
+            
           </p>
-          <p class="apresentation__container-text">
-            3. Mentalidade
+          <p class="apresentation__container-text"><strong>3. Mentalidade</strong>
+            
           </p>
-          <p class="apresentation__container-text">
-            4. Movimento
+          <p class="apresentation__container-text"><strong>4. Movimento</strong>
+            
           </p>
           <p class="apresentation__container-text">
             Eu sei que esse é um processo desafiador, pois vários hábitos nos acompanham há muito tempo e, além disso, a falta de constância faz com que muitas mulheres parem o processo no meio do caminho. Por isso utilizo técnicas de coaching e ferramentas para trazer leveza e praticidade para a sua caminhada de transformação. Vamos juntas criar um planejamento específico para você sem terrorismo e sem passar fome, respeitando suas necessidades individuais, seus gostos e sua realidade! 
@@ -93,10 +76,11 @@
         </div>
       </section>
       <section class="services">
-        <div class="button">
+        <!-- <div class="button">
           <input type="button" value="Cluble da Mulher Plena" />
-        </div>
+        </div> -->
         <div class="button">
+          <!-- <button type="submit"><a href="https://camilatelesnutricionista.com.br/cardapiomulherplena" target="_blank">Cardapio mensa</a>l</button> -->
           <input type="button" value="Cardápio Mensal" />
         </div>
         <div class="button">
@@ -119,11 +103,11 @@
       </section>
       <section class="img-office"></section>
     </main>
-    <footer class="container-footer">
-      <div class="footer">
-        <div class="footer__social">
-          <p>Redes sociais</p>
-          <div class="footer__social-container">
+    <footer class="footer" id="footer">
+      <div class="footer__container">
+        <div class="footer__social box">
+          <h3 class="footer__title">Redes sociais</h3>
+          <div class="footer__social-itens">
             <a href="http://">
               <img src="assets/img/social/instagram2.png" alt="facebook" />
             </a>
@@ -138,11 +122,11 @@
             </a>
           </div>
         </div>
-        <div class="footer__image">
-          <img src="./assets/img/logo_branca.png" alt="" />
+        <div class="footer__image box">
+          <img src="./assets/img/logo.png" alt="" />
         </div>
-        <div class="footer__contact">
-          <p>Contato</p>
+        <div class="footer__contact box">
+          <h3 class="footer__title">Contato</h3>
           <address class="footer__contact-address">
             <p>
               <img
@@ -150,7 +134,7 @@
                 alt=""
                 srcset=""
               />
-              Rua Olímpia, nº 18 Belo Horizonte - MG
+              Rua Olímpia, nº 18, sala 505, Belo Horizonte - MG
             </p>
             <p>
               <a href="tel:+5531982508787">
