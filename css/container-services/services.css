@@ -1,0 +1,36 @@
+.apresentation {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 .5rem;
+}
+
+.apresentation__title {
+  font-size: 4.2rem;
+  font-weight: 700;
+  padding: 2rem;
+  color: var(--light-green);
+  text-align: center;
+}
+
+.apresentation__container-text {
+  font-size: 1.8rem;
+  font-weight: 200;
+  font-family: var(--montserrat);
+  margin-bottom: 2rem;
+  padding: .5rem;
+  letter-spacing: .1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .apresentation {
+    width: 95%;
+    margin: 8rem auto 5rem auto;
+    
+    padding: 0 .5rem;
+  }
+
+}

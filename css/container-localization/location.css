@@ -1,0 +1,49 @@
+.location {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.location__map {
+  width: 100%;
+  height: 45rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.location iframe {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 1rem var(--grey);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.button input {
+  padding: 2rem;
+  font-size: 1.6rem;
+  color: white;
+  background-color: var(--dark-pink);
+  border: none;
+  border-radius: 3rem;
+  text-transform: uppercase;
+  transition: 0.7s;
+  margin: 0 0 3rem 0;
+}
+
+.button input:hover {
+  background-color: var(--red);
+  transform: scale(1.1);
+  box-shadow: 0 .5rem 1rem var(--grey);
+  transition: 0.7s;
+}
